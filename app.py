@@ -11,9 +11,9 @@ from vertexai.generative_models import GenerativeModel, GenerationConfig
 # ==========================================
 # 🔧 Configure Your GCP & Spanner Settings
 # ==========================================
-PROJECT_ID = "my-project-840969-350821"
-INSTANCE_ID = "mediastreamingdemo"
-DATABASE_ID = "mediademo"
+PROJECT_ID = "YOUR_GCP_PROJECT"
+INSTANCE_ID = "YOUR_SPANNER_INSTANCE"
+DATABASE_ID = "YOUR_SPANNER_DATABASE"
 
 # Page Configurations
 st.set_page_config(layout="wide", page_title="Spanner Video Search Hub")

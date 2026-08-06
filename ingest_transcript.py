@@ -2,13 +2,13 @@
 from google.cloud import spanner, aiplatform
 from vertexai.language_models import TextEmbeddingModel, TextEmbeddingInput
 
-PROJECT_ID = "my-project-840969-350821"
-INSTANCE_ID = "mediastreamingdemo"
-DATABASE_ID = "mediademo"
+PROJECT_ID = "YOUR_GCP_PROJECT"
+INSTANCE_ID = "YOUR_SPANNER_INSTANCE"
+DATABASE_ID = "YOUR_SPANNER_DATABASE"
 
 VIDEO_ID = "moving_google_app"
 TITLE = "Moving - Meet the Google App"
-GCS_VIDEO_URI = "gs://mediastreamingdemo/moving_google_app.mp4"
+GCS_VIDEO_URI = "gs://YOUR_SPANNER_INSTANCE/moving_google_app.mp4"
 
 TRANSCRIPT_DATA = [
     {"id": 1, "start": 0, "end": 2, "text": "lift with your legs."},

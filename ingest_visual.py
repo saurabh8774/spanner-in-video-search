@@ -5,13 +5,13 @@ from vertexai.vision_models import MultiModalEmbeddingModel, Video, VideoSegment
 # ==========================================
 # 🔧 Configure Your GCP & Spanner Settings
 # ==========================================
-PROJECT_ID = "my-project-840969-350821"
-INSTANCE_ID = "mediastreamingdemo"
-DATABASE_ID = "mediademo"
+PROJECT_ID = "YOUR_GCP_PROJECT"
+INSTANCE_ID = "YOUR_SPANNER_INSTANCE"
+DATABASE_ID = "YOUR_SPANNER_DATABASE"
 
 VIDEO_ID = "moving_google_app"
 TITLE = "Moving - Meet the Google App"
-GCS_URI = "gs://mediastreamingdemo/moving_google_app.mp4"
+GCS_URI = "gs://YOUR_SPANNER_INSTANCE/moving_google_app.mp4"
 INTERVAL_SEC = 4  # Legal minimum for the API
 
 def ingest_visual_video():

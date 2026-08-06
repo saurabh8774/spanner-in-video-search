@@ -7,17 +7,17 @@ set -e
 echo "🚀 Starting Cloud Spanner Video Search Hub Auto-Deployment..."
 
 # 1. Collect Project Variables
-read -p "Enter GCP Project ID [my-project-840969-350821]: " PROJECT_ID
-PROJECT_ID=${PROJECT_ID:-"my-project-840969-350821"}
+read -p "Enter GCP Project ID [YOUR_GCP_PROJECT]: " PROJECT_ID
+PROJECT_ID=${PROJECT_ID:-"YOUR_GCP_PROJECT"}
 
-read -p "Enter Spanner Instance ID [mediastreamingdemo]: " INSTANCE_ID
-INSTANCE_ID=${INSTANCE_ID:-"mediastreamingdemo"}
+read -p "Enter Spanner Instance ID [YOUR_SPANNER_INSTANCE]: " INSTANCE_ID
+INSTANCE_ID=${INSTANCE_ID:-"YOUR_SPANNER_INSTANCE"}
 
-read -p "Enter Spanner Database ID [mediademo]: " DATABASE_ID
-DATABASE_ID=${DATABASE_ID:-"mediademo"}
+read -p "Enter Spanner Database ID [YOUR_SPANNER_DATABASE]: " DATABASE_ID
+DATABASE_ID=${DATABASE_ID:-"YOUR_SPANNER_DATABASE"}
 
-read -p "Enter GCS Bucket Name [mediastreamingdemo]: " GCS_BUCKET
-GCS_BUCKET=${GCS_BUCKET:-"mediastreamingdemo"}
+read -p "Enter GCS Bucket Name [YOUR_SPANNER_INSTANCE]: " GCS_BUCKET
+GCS_BUCKET=${GCS_BUCKET:-"YOUR_SPANNER_INSTANCE"}
 
 # Set GCP Context
 gcloud config set project "$PROJECT_ID"
